@@ -55,8 +55,11 @@ var options = {
 }
 ```
 
-Now when you run the bot in Node it will login with your bot account and enter the channel or channels you have given it. *REMEMBER!*: The bot can join multiple channels and you can do this by adding extra channels into the channels field and separating them by commas. e.g:
+Now when you run the bot in Node it will login with your bot account and enter the channel or channels you have given it.
+
+*REMEMBER!*: The bot can join multiple channels and you can do this by adding extra channels into the channels field and separating them by commas. e.g:
 > `channels: ["tsukle", "other", "channels"]`
+
 
 ------
 
