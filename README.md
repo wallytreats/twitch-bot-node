@@ -1,9 +1,9 @@
-## Twitch Bot
+# Twitch Bot
 This is a Twitch Bot created with NodeJS using the tmi.js module.
 
 ------
 
-## What do I need?
+# What do I need?
 You will need:
 * [NodeJS](https://nodejs.org/en/)
 * [TMI.JS](https://tmijs.org/)
@@ -11,7 +11,7 @@ You will need:
 
 ------
 
-## Where do I begin?
+# Where do I begin?
 Well the first thing you need once you have installed Node, is you must install the tmi.js library wherever you will be keeping the rest of the files.
 
 So for example if you are keeping these files in C:/Users/"Your_Username"/Desktop, you would cd (change directory) into your desktop and then run this command.
@@ -22,7 +22,7 @@ This is good, if you have this, that means you are setup and ready to continue.
 
 ------
 
-## Do I need a seperate Twitch account for my bot?
+# Do I need a seperate Twitch account for my bot?
 Yes.
 
 You will need to create a new Twitch account for the bot, preferably with the word "bot" at the end or something so people can distinguish. Then you will need to go to this site:
@@ -63,7 +63,7 @@ Now when you run the bot in Node it will login with your bot account and enter t
 
 ------
 
-## What now?
+# What now?
 From here on you can use the `index.js` file that is included here to run a simple bot with a single command.
 
 `tmi.js` also has documentation, using this you can find all of the necessary event functions and so on to create a fully functional bot.
@@ -82,7 +82,7 @@ And pasting it below the current one to create a new command, all you need to do
 
 ------
 
-## How do I run it?
+# How do I run it?
 This entire twitch bot runs of Node alone, so all you need to do is open your Node command prompt or use your normal command prompt depending on which you chose at setup. You then need to navigate to the folder that your bot files are located and run it using:
 > `node index.js`
 
@@ -90,7 +90,7 @@ If your bot uses a different file for example `bot.js` or another name, then you
 
 ------
 
-## Overview
+# Overview
 * You must have Node installed.
 * You must install the tmi.js module.
 * You must create a seperate account for your bot and create an OAuth key for it.
