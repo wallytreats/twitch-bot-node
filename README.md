@@ -87,3 +87,17 @@ This entire twitch bot runs of Node alone, so all you need to do is open your No
 > `node index.js`
 
 If your bot uses a different file for example `bot.js` or another name, then you must use that filename in the node command instead. If there are no errors you will see a twitch connection message come up. And then you will see your chat start showing up (test this by typing a message in chat.).
+
+------
+
+## Overview
+* You must have Node installed.
+* You must install the tmi.js module.
+* You must create a seperate account for your bot and create an OAuth key for it.
+
+---
+---
+
+
+## CHANGELOG
+* 27/06/2016 - Initial Files.
