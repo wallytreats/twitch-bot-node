@@ -35,6 +35,7 @@ Okay now that you have a bot account with an OAuth key. You will want to go into
 * username
 * password
 * channels
+
 With your bots username, password (The OAuth key.) and then enter the channel that you want your bot to enter. Here is an example below:
 
 >```javascript
@@ -42,12 +43,10 @@ var options = {
   options: {
     debug: true
   },
-
   connection: {
     cluster: "aws",
     reconnect: true
   },
-
   identity: {
     username: "tsuklebot",
     password: "oauth:..."
