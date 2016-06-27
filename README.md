@@ -28,9 +28,13 @@ From here on you can use the `index.js` file that is included here to run a simp
 `tmi.js` also has documentation, using this you can find all of the necessary event functions and so on to create a fully functional bot.
 I will also be updating the bot regularly with more functions and commands added with some extra features so eventually you are left with a fully built bot.
 
-As it stands the bot works. You can copy the "if" command inside the chat function and paste it underneath the current one to create another command, you can do this to make as many as you wish.
+---
+
+As it stands the bot works and you have a few functions in there to get you started, you can run it and it will work with the commands currently given. You can add more and change the commands by copying the IF command shown here:
 > ```javascript
 if(message === "Hello"){
   client.say("channel", " Hi! " + user["display-name"])
 }
 ```
+
+And pasting it below the current one to create a new command, all you need to do is change the trigger word "Hello" to anything you want and then change the response which is inside the second set of speech marks on the `client.say` line. The initial command uses the username of the person that sent the trigger message, you can keep this in the command or you can remove it by deleting ` + user["display-name"]`.
