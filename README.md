@@ -7,6 +7,7 @@ This is a Twitch Bot created with NodeJS using the tmi.js module.
 You will need:
 * [NodeJS](https://nodejs.org/en/)
 * [TMI.JS](https://tmijs.org/)
+* A Twitch account.
 * A text/script editor of choice (I strongly recommend [Atom](https://atom.io/), Notepad will work just fine though.)
 
 ------
