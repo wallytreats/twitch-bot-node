@@ -97,7 +97,9 @@ If your bot uses a different file for example `bot.js` or another name, then you
 
 ---
 ---
+---
+---
 
 
-## CHANGELOG
+# Changelog
 * 27/06/2016 - Initial Files.
