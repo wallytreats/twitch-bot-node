@@ -13,7 +13,7 @@ You will need:
 ------
 
 # Where do I begin?
-Well the first thing you need once you have installed Node, is you must install the tmi.js library wherever you will be keeping the rest of the files.
+The first thing you need once you have installed Node, is you must install the tmi.js library wherever you will be keeping the rest of the files.
 
 So for example if you are keeping these files in C:/Users/"Your_Username"/Desktop, you would cd (change directory) into your desktop and then run this command.
 > `npm install --save tmi.js`
@@ -96,11 +96,3 @@ If your bot uses a different file for example `bot.js` or another name, then you
 * You must install the tmi.js module.
 * You must create a seperate account for your bot and create an OAuth key for it.
 
----
----
----
----
-
-
-# Changelog
-* 27/06/2016 - Initial Files.
