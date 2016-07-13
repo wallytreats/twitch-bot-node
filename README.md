@@ -1,4 +1,4 @@
-# Twitch Bot
+# Creating a Twitch Chat Bot using the Tmi.js Node Module.
 This is a Twitch Bot created with NodeJS using the tmi.js module.
 
 ------
