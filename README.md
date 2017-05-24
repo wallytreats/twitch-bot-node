@@ -16,7 +16,8 @@ You will need:
 The first thing you need once you have installed Node, is you must install the tmi.js library wherever you will be keeping the rest of the files.
 
 So for example if you are keeping these files in C:/Users/"Your_Username"/Desktop, you would cd (change directory) into your desktop and then run this command.
-> `npm install --save tmi.js`
+
+`npm install --save tmi.js`
 
 After running this command you will notice a `node_modules` folder which will have another folder inside named `tmi.js`.
 This is good, if you have this, that means you are setup and ready to continue.
@@ -37,9 +38,9 @@ Okay now that you have a bot account with an OAuth key. You will want to go into
 * password
 * channels
 
-With your bots username, password (The OAuth key.) and then enter the channel that you want your bot to enter. Here is an example below:
+With your bots username, password (The OAuth key.) and then enter the channel that you want your bot to enter. Here is an example below: 
 
->```javascript
+```js
 var options = {
   options: {
     debug: true
@@ -54,12 +55,13 @@ var options = {
   },
   channels: ["tsukle"]
 }
-```
+```  
 
 Now when you run the bot in Node it will login with your bot account and enter the channel or channels you have given it.
 
 *REMEMBER!*: The bot can join multiple channels and you can do this by adding extra channels into the channels field and separating them by commas. e.g:
-> `channels: ["tsukle", "other", "channels"]`
+
+`channels: ["tsukle", "other", "channels"]`
 
 
 ------
@@ -73,7 +75,8 @@ I will also be updating the bot regularly with more functions and commands added
 ---
 
 As it stands the bot works and you have a few functions in there to get you started, you can run it and it will work with the commands currently given. You can add more and change the commands by copying the IF command shown here:
-> ```javascript
+
+```javascript
 if(message === "Hello"){
   client.say("channel", " Hi! " + user["display-name"])
 }
@@ -85,7 +88,8 @@ And pasting it below the current one to create a new command, all you need to do
 
 ### How do I run it?
 This entire twitch bot runs of Node alone, so all you need to do is open your Node command prompt or use your normal command prompt depending on which you chose at setup. You then need to navigate to the folder that your bot files are located and run it using:
-> `node index.js`
+
+`node index.js`
 
 If your bot uses a different file for example `bot.js` or another name, then you must use that filename in the node command instead. If there are no errors you will see a twitch connection message come up. And then you will see your chat start showing up (test this by typing a message in chat.).
 
