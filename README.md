@@ -7,7 +7,7 @@ This is a Twitch Bot created with NodeJS using the tmi.js module.
 You will need:
 * [NodeJS](https://nodejs.org/en/)
 * [TMI.JS](https://tmijs.org/)
-* A Twitch account.
+* A Twitch account in neccesary for the bot.
 * A text/script editor of choice (I strongly recommend [Atom](https://atom.io/), Notepad will work just fine though.)
 
 ------
@@ -38,7 +38,7 @@ Okay now that you have a bot account with an OAuth key. You will want to go into
 * password
 * channels
 
-With your bots username, password (The OAuth key.) and then enter the channel that you want your bot to enter. Here is an example below: 
+With your bots username, password (The OAuth key.) and then enter the channel that you want your bot to enter. Here is an example below:
 
 ```js
 var options = {
@@ -99,4 +99,3 @@ If your bot uses a different file for example `bot.js` or another name, then you
 * You must have Node installed.
 * You must install the tmi.js module.
 * You must create a seperate account for your bot and create an OAuth key for it.
-
