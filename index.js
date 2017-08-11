@@ -19,7 +19,6 @@ var options = {
   },
   channels: ["Wallytreats"]
 }
-console.log(process.env.TOKEN);
 //This is creating our client connection with settings.
 var client = new tmi.client(options);
 
