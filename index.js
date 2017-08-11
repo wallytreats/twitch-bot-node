@@ -1,5 +1,6 @@
 //Initial requires.
 var tmi = require('tmi.js');
+var env = require("dotenv").config();
 
 //These are the settings for the client to use.
 var options = {
@@ -13,12 +14,12 @@ var options = {
   },
 
   identity: {
-    username: "enter your bots twitch username here",
-    password: "enter your authkey here"
+    username: "wallytreatbot",
+    password: process.env.TOKEN
   },
-  channels: ["enter channel or channels here, use commas to seperate channels."]
+  channels: ["Wallytreats"]
 }
-
+console.log(process.env.TOKEN);
 //This is creating our client connection with settings.
 var client = new tmi.client(options);
 
@@ -31,11 +32,11 @@ client.on("connected", function(address, port){
 });
 
 //This function is executed everytime someone sends a message in the chat.
-client.on("chat", function(channel, user, message){
-  //Using this if statement you can check the contents of a message and create commands.
-  //This checks the contents of the message to see if they match the given message, this means that the message HAS to be that it cannot just contain that message.
+client.on("chat", function(channels, user, message){
+  //this statement checks the contents of a message and creates commands.
+  //check the contents of the message to see if they match the given message, cant contain the command, it must be the entire statement
   //This allows you to set commands or even words without worrying if someone was to use the word in a sentence or so on.
-  if(message === "Hello"){
+  if(message === "wally"){
     client.say("channel", " Hi! " + user["display-name"])
   }
 });
@@ -43,3 +44,7 @@ client.on("chat", function(channel, user, message){
 client.on("ban", function (channel, username, reason) {
     client.say("channel", "User: " + user[display-name] + " - has been banned.")
 });
+
+client.listenFor('!command', (err, chatter) => {
+  client.msg('This is the command response')
+})
